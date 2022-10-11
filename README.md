@@ -3,7 +3,7 @@
 The following project is browser based web application used to prepare list of tasks to do. Each task can be easily marked as done or deleted using simple design buttons. Main idea of this project was to keep solutions as easy and understandable as possible. <br>
 There are several improvements released with revision 1.0 and 1.1: 
 
-1. Moved whole task list from vanilla.js to react.js
+1. Moved task list from vanilla.js to react.js
 2. Implemented component based application idea.
 3. Implemented deployment of build app version.
 
@@ -16,6 +16,7 @@ At the moment application does not have full funtionality yet, only user interfa
 3. Java Script/React.js
 4. BEM convention
 5. Immutability convention
+6. JSX
 
 ## How does it look?
 
