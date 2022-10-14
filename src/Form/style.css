@@ -16,6 +16,7 @@
 .addTask__form {
     display: grid;
     grid-template-columns: 1fr auto;
+    grid-gap: 15px;
 }
 
 @media (max-width: 450px) {
@@ -27,13 +28,22 @@
 
 .addTask__input {
     margin: 15px;
+    margin-right: 0;
     height: 35px;
     border: 1px solid rgb(221, 223, 225);
+}
+
+@media (max-width: 450px) {
+    .addTask__input {
+        margin: 15px;
+        margin-bottom: 0;
+    }
 }
 
 
 .addTask__submit {
     margin: 15px;
+    margin-left: 0;
     height: 35px;
     background-color: teal;
     color: white;
@@ -41,6 +51,13 @@
     font-size: 14px;
     transition: 0.5s;
     cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .addTask__submit {
+        margin: 15px;
+        margin-top: 0;
+    }
 }
 
 .addTask__submit:hover {
