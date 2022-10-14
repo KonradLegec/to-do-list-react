@@ -8,16 +8,19 @@ import Footer from "./Footer";
 import Box from "./Box";
 import { useState } from "react";
 
-const tasks = [
-  { id: 1, content: "przejść na reacta", done: false },
-  { id: 2, content: "zjeść obiad", done: true },
-];
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
+  const [tasks, setTasks] = useState([
+    { id: 1, content: "przejść na reacta", done: false },
+    { id: 2, content: "zjeść obiad", done: true },
+  ]);
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
+  };
+
+  const removeTask = (id) => {
+    setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
 
   return (
@@ -35,7 +38,9 @@ function App() {
             toggleHideDone={toggleHideDone}
           />
         }
-        body={<Tasks tasks={tasks} hideDone={hideDone} />}
+        body={
+          <Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />
+        }
       />
       <Footer body={"Lista zadań v2.0 10/2022 Konrad Legęć"} />
     </Box>
