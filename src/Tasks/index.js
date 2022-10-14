@@ -6,7 +6,7 @@ const Tasks = (props) => (
       <li
         key={task.id}
         className={`${
-          task.done && props.hideDoneTasks
+          task.done && props.hideDone
             ? " taskList__item--hidden"
             : "taskList__item"
         }`}
