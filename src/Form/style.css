@@ -27,6 +27,7 @@
 }
 
 .addTask__input {
+    padding-left: 10px;
     margin: 15px;
     margin-right: 0;
     height: 35px;
