@@ -45,6 +45,7 @@ function App() {
   };
 
   const addNewTask = (content) => {
+    if (content.length !== 0) {
     setTasks(tasks => [
       ...tasks,
       {
@@ -53,7 +54,7 @@ function App() {
         id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       },
     ]);
-  };
+  }};
 
   return (
     <Box>
