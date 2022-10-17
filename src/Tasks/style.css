@@ -47,6 +47,7 @@
     background-color: rgb(229, 8, 8);
     color: white;
     font-size: 20px;
+    text-align: center;
     transition: 0.5s;
     cursor: pointer;
 }
